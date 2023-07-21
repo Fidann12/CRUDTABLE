@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="student__modal">
+      <form autocomplete="off">
+        <input type="text" name="name" placeholder="Ad" />
+        <input type="text" name="surname" placeholder="Soyad" />
+        <button>Yadda Saxla</button>
+      </form>
+    </div>
+    <div class="mark__modal">
+      <form autocomplete="off">
+        <select id="student__list"></select>
+        <input type="number" id="mark" placeholder="75" />
+        <button>Yadda Saxla</button>
+      </form>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ad soyad <button id="student__plus">+</button></th>
+          <th>Qiymətlər <button id="mark__plus">+</button></th>
+          <th>Ortalama</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="canv">
+      <canvas id="bar-chart" width="800" height="450"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
